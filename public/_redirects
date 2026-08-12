@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects (also works on most static hosts)
+# www -> apex
+https://www.basilan.us/*  https://basilan.us/:splat  301
+
+# Optional: preserve trailing-slash-less project URLs
+/projects/trading-platform  /projects/trading-platform/  301
+/projects/classic-games     /projects/classic-games/     301

@@ -1,0 +1,46 @@
+# Deploy basilan.us to Cloudflare Pages.
+#
+# Primary option (recommended): connect this repo in the Cloudflare Dashboard
+# (Workers & Pages -> Create -> Pages -> Connect to Git) with:
+#   Build command:   npm run build
+#   Output directory: out
+#   Node version:    22
+#
+# This workflow is an alternative that deploys from GitHub Actions using a
+# Cloudflare API token. Use ONE deploy path — either the Git-connect in the
+# Cloudflare dashboard OR this action, not both.
+#
+# Secrets required (repo -> Settings -> Secrets and variables -> Actions):
+#   CLOUDFLARE_API_TOKEN  (Cloudflare API token with Pages:Edit permission)
+#   CLOUDFLARE_ACCOUNT_ID (your Cloudflare account id)
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: basilan-us
+          directory: out
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
