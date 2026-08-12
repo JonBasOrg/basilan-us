@@ -1,0 +1,17 @@
+{
+  "name": "Jon-jon Basilan",
+  "short_name": "Jon-jon",
+  "description": "Engineer, builder, and technologist. I build systems that solve real problems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06070A",
+  "theme_color": "#06070A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

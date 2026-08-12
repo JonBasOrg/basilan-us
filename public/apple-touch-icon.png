@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jon-jon Basilan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <style>
+      body { margin: 0; background: #06070a; color: #f4f2ec; font-family: system-ui, sans-serif; display: grid; place-items: center; min-height: 100vh; }
+      .c { text-align: center; }
+      .v { color: #c8a24b; font-family: Georgia, serif; font-size: 64px; }
+    </style>
+  </head>
+  <body>
+    <div class="c">
+      <div class="v">J</div>
+      <h1>Jon-jon Basilan</h1>
+      <p>If you can read this, the app is booting.</p>
+    </div>
+  </body>
+</html>
