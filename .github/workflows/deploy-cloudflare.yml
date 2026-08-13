@@ -1,7 +1,8 @@
 # Deploy basilan.us to Cloudflare Pages via the Cloudflare Workers CLI.
 #
-# `wrangler pages deploy` auto-creates the "basilan-us" Pages project on first
-# run, so no manual Cloudflare dashboard setup is needed.
+# `wrangler pages project create` runs once, guarded by `|| true` so a
+# subsequent run with the project already present does not fail. The deploy
+# step then uploads the static `out/` directory.
 #
 # Secret prerequisites (repo -> Settings -> Secrets and variables -> Actions):
 #   CLOUDFLARE_API_TOKEN  (Cloudflare API token, Account->Cloudflare Pages:Edit,
@@ -30,11 +31,16 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - name: Create Pages project (idempotent)
+        run: npx wrangler pages project create basilan-us --production-branch=main || true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          # Create the Pages project if it does not exist, then always deploy.
-          command: (pages project create basilan-us --production-branch=main || true) && pages deploy out --project-name=basilan-us --branch=main
+          command: pages deploy out --project-name=basilan-us --branch=main
           packageManager: npm
