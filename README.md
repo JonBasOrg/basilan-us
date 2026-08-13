@@ -163,31 +163,28 @@ Edit `src/content/currently-building.ts`:
 
 ## Deploying to Cloudflare Pages
 
-The site is a static export, so Cloudflare Pages deployment is just a build command.
+The site deploys **automatically on every push to `main`** via
+`.github/workflows/deploy-cloudflare.yml`. Live URL: **https://basilan-us.pages.dev**.
 
-1. Push this repo to GitHub (see below).
-2. In Cloudflare Dashboard → **Workers & Pages → Create → Pages → Connect to Git**.
-3. Select the repo. Use these settings:
-   - **Build command:** `npm run build`
-   - **Build output directory:** `out`
-   - **Node version:** `22` (or the project's current major)
-4. **Deploy.** Cloudflare auto-detects the `_headers` file for security/caching headers.
-5. **Custom domain:** in the Pages project → Custom domains → add `basilan.us`, then add `www.basilan.us`.
+The workflow:
+1. `npm ci` → `npm run build` → static site in `out/`
+2. `wrangler pages project create basilan-us` (idempotent; fails gracefully if it exists)
+3. `wrangler pages deploy out --project-name=basilan-us` → new production deployment
+4. Server-side, no Node runtime; `_headers` (security + caching) and `_redirects` (www→apex) are uploaded automatically.
 
-### DNS (managed by Cloudflare)
+**Repo secrets required** (Settings → Secrets and variables → Actions):
 
-| Type | Name | Target |
-|---|---|---|
-| A | `@` | `192.0.2.1` (use the Pages-assigned `*.pages.dev` CNAME instead if using Cloudflare Pages DNS) |
-| CNAME | `www` | `<project>.pages.dev` |
+- `CLOUDFLARE_API_TOKEN` — Cloudflare API token with **Account → Cloudflare Pages → Edit**. **Do not set an IP whitelist** (GitHub Actions uses changing runner IPs).
+- `CLOUDFLARE_ACCOUNT_ID` — your Cloudflare account ID.
 
-For a **clean apex + www setup** with Cloudflare Pages, the recommended pattern is:
-- `basilan.us` → CNAME to your Pages project (Cloudflare flattens the apex automatically).
-- `www.basilan.us` → CNAME to the same Pages project, and enable **Bulk Redirect** (or a Page Rule) redirecting `www` → apex.
+### Custom domain (basilan.us / www)
+
+The apex and `www` are **not yet attached** — add them in the Cloudflare dashboard:
+Workers & Pages → **basilan-us** → **Custom domains** → add `basilan.us`, then `www`.
+With Cloudflare-managed DNS on the apex, add a CNAME record for `@` and `www` to
+`basilan-us.pages.dev` (Cloudflare flattens the apex). Prefer `www → apex` redirect.
 
 > **Do not touch `invest.basilan.us` or `games.basilan.us`.** `invest.basilan.us` is the live trading dashboard (its own application) and must keep its existing DNS/Cloudflare tunnel. `games.basilan.us` is reserved for the browser games app.
-
-### Subdomains
 
 `invest.basilan.us` and `games.basilan.us` are **separate applications**, not part of this repo. This site only links to them. See `src/content/site.ts` → `hubs`.
 
