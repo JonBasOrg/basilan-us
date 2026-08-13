@@ -1,0 +1,6 @@
+    function render(){el.innerHTML=tiles.map((t,i)=>`<button class="cell ${t.up||t.match?'':'hidden-card'} ${t.match?'matched':''} ${i===cursor?'focused':''}" data-i="${i}" aria-label="${t.match?'matched '+t.v:t.up?t.v:'hidden tile'}">${t.up||t.match?t.v:''}</button>`).join('');$$('.cell',el).forEach(b=>b.onclick=()=>{cursor=+b.dataset.i;flip(cursor)});if(!done)setStatus(`Moves: ${moves} · Pairs: ${tiles.filter(t=>t.match).length/2}/8`);}
+    const key=e=>{const W=4;if(e.key==='ArrowLeft'&&cursor%W>0)cursor--;else if(e.key==='ArrowRight'&&cursor%W<W-1)cursor++;else if(e.key==='ArrowUp'&&cursor>=W)cursor-=W;else if(e.key==='ArrowDown'&&cursor<tiles.length-W)cursor+=W;else if(e.key==='Enter'||e.key===' '){e.preventDefault();flip(cursor);return;}else return;e.preventDefault();render();};window.addEventListener('keydown',key);render();return()=>window.removeEventListener('keydown',key);
+  }
+
+  // Checkers
+  function startCheckers(){

@@ -1,0 +1,17 @@
+    function render(){
+      let top=`<div class="sol-top"><div class="stock">${source.length?'<button class="playing-card back" data-source aria-label="Draw from source"></button>':'<button class="card-slot" data-source aria-label="Reset source">↻</button>'}</div><div class="waste">${shown.length?itemHtml(shown.at(-1),'data-shown',sel?.type==='shown'):'<div class="card-slot">Shown</div>'}</div><div class="foundation-wrap">${goals.map((g,i)=>g.length?itemHtml(g.at(-1),`data-goal="${i}"`,sel?.type==='goal'&&sel.i===i):`<button class="card-slot" data-goal="${i}" aria-label="foundation ${i+1}">${familyMarks[i]}</button>`).join('')}</div></div>`;
+      let lanesHtml=`<div class="sol-columns">${lanes.map((lane,li)=>`<div class="col-stack" data-lane="${li}" style="height:${Math.max(125,108+(lane.length-1)*28)}px">${lane.length?lane.map((item,pi)=>`<div style="position:absolute;top:${pi*28}px;z-index:${pi}">${itemHtml(item,`data-item-lane="${li}" data-pos="${pi}"`,sel?.type==='lane'&&sel.i===li&&sel.pos===pi)}</div>`).join(''):`<button class="card-slot" data-lane-empty="${li}" aria-label="empty tableau lane">K</button>`}</div>`).join('')}</div>`;
+      table.innerHTML=top+lanesHtml;
+      $('[data-source]',table)?.addEventListener('click',sourceClick);
+      $('[data-shown]',table)?.addEventListener('click',()=>sel?.type==='shown'?deselect():select('shown'));
+      $$('[data-goal]',table).forEach(x=>x.onclick=()=>{let i=+x.dataset.goal;if(sel)moveToGoal(i);else if(goals[i].length)select('goal',i)});
+      $$('[data-item-lane]',table).forEach(x=>x.onclick=e=>{e.stopPropagation();let li=+x.dataset.itemLane,pi=+x.dataset.pos;if(sel){if(sel.type==='lane'&&sel.i===li&&sel.pos===pi)deselect();else moveToLane(li);}else select('lane',li,pi);});
+      $$('[data-lane-empty]',table).forEach(x=>x.onclick=()=>moveToLane(+x.dataset.laneEmpty));
+      $$('[data-lane]',table).forEach(x=>x.onclick=e=>{if(e.target===x&&sel)moveToLane(+x.dataset.lane)});
+      if(!statusEl.textContent)checkWin();
+    }
+    render();return()=>{};
+  }
+
+  const initial=location.hash.replace('#','');if(initial&&initial!=='home'&&gameDefs.some(g=>g.id===initial))openGame(initial,false,true);else history.replaceState(null,'','#home');
+})();
