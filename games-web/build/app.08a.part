@@ -1,0 +1,12 @@
+    const familyMarks=String.fromCodePoint(9824,9829,9830,9827).split('');
+    const levelMarks=['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+    let pool=shuffle(Array.from({length:52},(_,id)=>({family:Math.floor(id/13),level:(id%13)+1,up:false})));
+    let lanes=Array.from({length:7},()=>[]),source=[],shown=[],goals=[[],[],[],[]],sel=null,done=false;
+    for(let c=0;c<7;c++)for(let j=0;j<=c;j++){let item=pool.pop();item.up=j===c;lanes[c].push(item);}source=pool;
+    root.innerHTML='<div class="solitaire-table" aria-label="Klondike Solitaire table"></div>';const table=$('.solitaire-table',root);
+    const isRed=item=>item.family===1||item.family===2;
+    const canStack=(item,target)=>target&&target.up&&isRed(item)!==isRed(target)&&item.level===target.level-1;
+    function selectedItems(){if(!sel)return null;if(sel.type==='shown')return shown.length?[shown[shown.length-1]]:null;if(sel.type==='goal')return goals[sel.i].length?[goals[sel.i][goals[sel.i].length-1]]:null;if(sel.type==='lane')return lanes[sel.i].slice(sel.pos);return null;}
+    function validSequence(list){for(let i=0;i<list.length-1;i++)if(!canStack(list[i+1],list[i]))return false;return !!list?.length;}
+    function deselect(){sel=null;render();}
+    function sourceClick(){if(done)return;if(source.length){let item=source.pop();item.up=true;shown.push(item);}else{source=shown.reverse().map(item=>({...item,up:false}));shown=[];}sel=null;beep(420,.03);render();}
