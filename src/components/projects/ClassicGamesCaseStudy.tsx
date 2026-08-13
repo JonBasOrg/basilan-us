@@ -38,7 +38,7 @@ const pillars = [
   {
     icon: Globe,
     title: "Play anywhere",
-    body: "Available on Google Play and coming soon as a browser version at games.basilan.us.",
+    body: "The browser edition is live now at games.basilan.us, with mouse, touch, and keyboard controls for desktop and mobile play.",
   },
 ];
 

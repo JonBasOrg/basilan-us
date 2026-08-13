@@ -19,6 +19,7 @@ export function ProjectCard({
   const isWide = emphasize ?? project.featured;
   const href = project.caseStudy ?? project.url ?? "#";
   const external = !!project.url && !project.caseStudy;
+  const displayStatus = project.slug === "classic-games-web" ? "Live" : project.status;
 
   return (
     <Link
@@ -54,7 +55,7 @@ export function ProjectCard({
           <div className="absolute inset-0 bg-grid" />
         )}
         <div className="absolute right-4 top-4 z-10">
-          <StatusBadge status={project.status} pulse={project.status === "Live" || project.status === "Published"} />
+          <StatusBadge status={displayStatus} pulse={displayStatus === "Live" || displayStatus === "Published"} />
         </div>
       </div>
 
