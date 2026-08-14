@@ -37,8 +37,8 @@ const pillars = [
   },
   {
     icon: Globe,
-    title: "Play anywhere",
-    body: "The browser edition is live now at games.basilan.us, with mouse, touch, and keyboard controls for desktop and mobile play.",
+    title: "One codebase, everywhere",
+    body: "The same Flutter source ships to both Android and the browser — identical game engines, AI, difficulty levels, and local-first saves. The web edition is live at games.basilan.us with mouse, touch, and keyboard controls for desktop and mobile play.",
   },
 ];
 
@@ -150,10 +150,10 @@ export function ClassicGamesCaseStudy({ project }: { project: Project }) {
               <TechList items={project.technologies} />
             </div>
             <p className="mt-8 text-pretty leading-relaxed text-chalk-muted">
-              The app is written in Dart with Flutter for a single, native
-              codebase across Android devices, using local-first storage for
+              The app is written in Dart with Flutter for a single codebase that
+              ships to Android and the browser, using local-first storage for
               preferences and progress. Game logic lives in isolated, testable
-              modules.
+              modules shared by both platforms.
             </p>
           </Reveal>
         </div>

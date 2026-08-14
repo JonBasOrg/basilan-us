@@ -184,9 +184,9 @@ Workers & Pages → **basilan-us** → **Custom domains** → add `basilan.us`, 
 With Cloudflare-managed DNS on the apex, add a CNAME record for `@` and `www` to
 `basilan-us.pages.dev` (Cloudflare flattens the apex). Prefer `www → apex` redirect.
 
-> **Do not touch `invest.basilan.us` or `games.basilan.us`.** `invest.basilan.us` is the live trading dashboard (its own application) and must keep its existing DNS/Cloudflare tunnel. `games.basilan.us` is reserved for the browser games app.
+> **Do not touch `invest.basilan.us`.** `invest.basilan.us` is the live trading dashboard (its own application) and must keep its existing DNS/Cloudflare tunnel. `games.basilan.us` is deployed from the **JonBasOrg/ClassicGames** repo (Cloudflare Pages `classic-games-web`); it is not maintained here.
 
-`invest.basilan.us` and `games.basilan.us` are **separate applications**, not part of this repo. This site only links to them. See `src/content/site.ts` → `hubs`.
+`invest.basilan.us` and `games.basilan.us` are **separate applications**, not part of this repo. This site only links to them. See `src/content/site.ts` → `hubs`. (The former temporary `games-web/` static implementation was archived from this repo once the real Flutter build went live.)
 
 ---
 
