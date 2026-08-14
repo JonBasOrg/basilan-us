@@ -19,7 +19,7 @@ export function ProjectCard({
   const isWide = emphasize ?? project.featured;
   const href = project.caseStudy ?? project.url ?? "#";
   const external = !!project.url && !project.caseStudy;
-  const displayStatus = project.slug === "classic-games-web" ? "Live" : project.status;
+  const displayStatus = project.status;
 
   return (
     <Link

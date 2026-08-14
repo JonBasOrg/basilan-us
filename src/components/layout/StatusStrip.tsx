@@ -12,7 +12,7 @@ export function StatusStrip() {
           Status
         </span>
         {featured.map((p) => {
-          const displayStatus = p.slug === "classic-games-web" ? "Live" : p.status;
+          const displayStatus = p.status;
           return (
             <span key={p.slug} className="inline-flex items-center gap-2 text-chalk-muted">
               <span className={cn("h-1.5 w-1.5 rounded-full", statusDot[displayStatus])} />

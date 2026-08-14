@@ -1,9 +1,0 @@
-{
-  "name": "Classic Games Collection",
-  "short_name": "Classic Games",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#0b0d12",
-  "theme_color": "#0b0d12",
-  "description": "Eleven classic games, free in your browser."
-}
