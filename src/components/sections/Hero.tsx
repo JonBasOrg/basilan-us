@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { site } from "@/content/site";
 
 const words = site.positioning;
@@ -58,17 +58,12 @@ export function Hero() {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <Link href="/projects" className="btn-primary">
-              Explore my work <ArrowRight className="h-4 w-4" />
+              Explore My Projects <ArrowRight className="h-4 w-4" />
             </Link>
             <Link href="/about" className="btn-ghost">
-              About me
+              About Me
             </Link>
-            <a
-              href={`mailto:${site.email}`}
-              className="inline-flex items-center gap-1.5 text-sm text-chalk-muted transition-colors hover:text-accent"
-            >
-              View résumé <ArrowUpRight className="h-3.5 w-3.5" />
-            </a>
+
           </motion.div>
         </motion.div>
       </div>

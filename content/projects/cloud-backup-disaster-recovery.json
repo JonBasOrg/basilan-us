@@ -1,0 +1,39 @@
+{
+  "id": "cloud-backup-disaster-recovery",
+  "slug": "cloud-backup-disaster-recovery",
+  "name": "Cloud Backup, Disaster Recovery & Resilience",
+  "tagline": "Cloud Backup, Disaster Recovery & Resilience",
+  "description": "Supported Veeam and SQL Server backup-and-restore activities as infrastructure moved to Azure. Evaluated Azure Backup alongside existing recovery infrastructure and developed read-only backup-health collection to support operational review.",
+  "category": "Cloud & Infrastructure",
+  "tags": [
+    "Cloud",
+    "Infrastructure"
+  ],
+  "technologies": [
+    "Veeam",
+    "SQL Server",
+    "Azure Backup (evaluation)",
+    "Recovery Services",
+    "PowerShell"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": false,
+  "sortOrder": 10,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-10",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/cloud-backup-disaster-recovery"
+}

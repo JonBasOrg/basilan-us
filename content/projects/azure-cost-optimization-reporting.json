@@ -1,0 +1,41 @@
+{
+  "id": "azure-cost-optimization-reporting",
+  "slug": "azure-cost-optimization-reporting",
+  "name": "Azure Cost Optimization & Financial Reporting",
+  "tagline": "Azure Cost Optimization & Financial Reporting",
+  "description": "Built Azure cost-reporting automation for subscription spending, project allocation, and executive review. Combined PowerShell weekly summaries with Python and Excel analysis of monthly trends, major resource costs, and resource-tagging quality. Reviewed Reserved Instances and Savings Plans to inform cloud cost and commitment decisions.",
+  "category": "Automation, FinOps & AI",
+  "tags": [
+    "Cloud",
+    "Automation",
+    "Leadership"
+  ],
+  "technologies": [
+    "Azure Cost Management",
+    "PowerShell",
+    "Python",
+    "Excel",
+    "Reserved Instances",
+    "Savings Plans"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": true,
+  "sortOrder": 3,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-03",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/azure-cost-optimization-reporting"
+}

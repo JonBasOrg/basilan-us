@@ -1,0 +1,39 @@
+{
+  "id": "azure-resource-inventory-automation",
+  "slug": "azure-resource-inventory-automation",
+  "name": "Azure Resource Inventory & IT Automation",
+  "tagline": "Azure Resource Inventory & IT Automation",
+  "description": "Created read-only Azure resource inventories and reusable reporting artifacts for operational and compliance review. Combined PowerShell status summaries with Python-based asset collection to organize resources, application relationships, and ownership metadata. Highlighted coverage and data-quality gaps to support informed infrastructure governance.",
+  "category": "Enterprise Operations & Governance",
+  "tags": [
+    "Cloud",
+    "Automation"
+  ],
+  "technologies": [
+    "Azure Resource Graph",
+    "PowerShell",
+    "Python",
+    "Microsoft Graph",
+    "Excel"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": false,
+  "sortOrder": 11,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-11",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/azure-resource-inventory-automation"
+}

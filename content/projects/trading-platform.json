@@ -1,0 +1,49 @@
+{
+  "slug": "trading-platform",
+  "name": "AI Personal Trading Platform",
+  "tagline": "An experimental AI-assisted market research & paper-trading lab.",
+  "description": "A personal research platform for market analysis, strategy testing, backtesting, and paper trading. It explores how automation and AI can assist trading research and decision-making — built as a safe, paper-only laboratory, not a live broker.",
+  "category": "Trading",
+  "status": "Live",
+  "year": 2026,
+  "featured": true,
+  "sortOrder": 1,
+  "image": null,
+  "useMockup": "trading",
+  "technologies": [
+    "Python",
+    "Schwab Trader API (read-only)",
+    "Multi-agent AI",
+    "Backtesting",
+    "Paper Trading",
+    "Risk Controls",
+    "Telegram Alerts"
+  ],
+  "url": "https://invest.basilan.us",
+  "caseStudy": "/projects/trading-platform",
+  "accent": "gold",
+  "tags": [
+    "AI",
+    "Automation",
+    "Trading"
+  ],
+  "id": "trading-platform",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "kind": "personal",
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "sources": [
+    {
+      "description": "Existing public portfolio project description.",
+      "internalReference": "src/content/projects.ts (pre-migration)"
+    }
+  ]
+}

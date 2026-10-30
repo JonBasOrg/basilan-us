@@ -1,0 +1,39 @@
+{
+  "id": "ai-assisted-it-operations",
+  "slug": "ai-assisted-it-operations",
+  "name": "AI-Assisted IT Operations & RCA",
+  "tagline": "AI-Assisted IT Operations & RCA",
+  "description": "Developed human-reviewed AI-assisted workflows for infrastructure investigation, evidence organization, and technical reporting. Hermes agents and Obsidian runbooks help separate confirmed findings from hypotheses across Azure, SQL, and application operations, with experimental integrations kept distinct from production controls.",
+  "category": "Automation, FinOps & AI",
+  "tags": [
+    "AI",
+    "Automation"
+  ],
+  "technologies": [
+    "Hermes Agent",
+    "Obsidian",
+    "PowerShell",
+    "Azure CLI",
+    "SQL Server"
+  ],
+  "status": "Experiment",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": true,
+  "sortOrder": 12,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-12",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/ai-assisted-it-operations"
+}

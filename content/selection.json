@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "enterpriseProjects": [
+    {
+      "rank": 1,
+      "id": "enterprise-data-center-exit-azure-migration",
+      "title": "Enterprise Data Center Exit & Azure Migration",
+      "category": "Cloud & Infrastructure",
+      "featured": true
+    },
+    {
+      "rank": 2,
+      "id": "enterprise-sql-high-availability",
+      "title": "Enterprise SQL Server High Availability",
+      "category": "Database & Data Platforms",
+      "featured": true
+    },
+    {
+      "rank": 3,
+      "id": "azure-cost-optimization-reporting",
+      "title": "Azure Cost Optimization & Financial Reporting",
+      "category": "Automation, FinOps & AI",
+      "featured": true
+    },
+    {
+      "rank": 4,
+      "id": "azure-front-door-waf",
+      "title": "Azure Front Door & WAF Modernization",
+      "category": "Cybersecurity & Identity",
+      "featured": true
+    },
+    {
+      "rank": 5,
+      "id": "hybrid-identity-ad-entra",
+      "title": "Hybrid Identity, Active Directory & Entra ID",
+      "category": "Cybersecurity & Identity",
+      "featured": false
+    },
+    {
+      "rank": 6,
+      "id": "soc2-security-compliance",
+      "title": "SOC 2 Security & Compliance Improvements",
+      "category": "Cybersecurity & Identity",
+      "featured": true
+    },
+    {
+      "rank": 7,
+      "id": "enterprise-networking-cloud-connectivity",
+      "title": "Enterprise Networking & Secure Cloud Connectivity",
+      "category": "Cloud & Infrastructure",
+      "featured": false
+    },
+    {
+      "rank": 8,
+      "id": "fabric-powerbi-data-platform",
+      "title": "Microsoft Fabric, Power BI & Data Platform",
+      "category": "Database & Data Platforms",
+      "featured": false
+    },
+    {
+      "rank": 9,
+      "id": "enterprise-sql-performance-rca",
+      "title": "Enterprise SQL Performance & Root Cause Analysis",
+      "category": "Database & Data Platforms",
+      "featured": false
+    },
+    {
+      "rank": 10,
+      "id": "cloud-backup-disaster-recovery",
+      "title": "Cloud Backup, Disaster Recovery & Resilience",
+      "category": "Cloud & Infrastructure",
+      "featured": false
+    },
+    {
+      "rank": 11,
+      "id": "azure-resource-inventory-automation",
+      "title": "Azure Resource Inventory & IT Automation",
+      "category": "Enterprise Operations & Governance",
+      "featured": false
+    },
+    {
+      "rank": 12,
+      "id": "ai-assisted-it-operations",
+      "title": "AI-Assisted IT Operations & RCA",
+      "category": "Automation, FinOps & AI",
+      "featured": true
+    },
+    {
+      "rank": 13,
+      "id": "m365-licensing-governance",
+      "title": "Microsoft 365 Licensing & Governance",
+      "category": "Enterprise Operations & Governance",
+      "featured": false
+    },
+    {
+      "rank": 14,
+      "id": "enterprise-app-security-integration",
+      "title": "Enterprise Application Security & Integration",
+      "category": "Cybersecurity & Identity",
+      "featured": false
+    }
+  ]
+}

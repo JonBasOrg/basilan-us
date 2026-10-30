@@ -1,0 +1,39 @@
+{
+  "id": "enterprise-app-security-integration",
+  "slug": "enterprise-app-security-integration",
+  "name": "Enterprise Application Security & Integration",
+  "tagline": "Enterprise Application Security & Integration",
+  "description": "Supported secure application connectivity through an Azure SFTP migration, TLS/HTTPS certificate workflows, and Azure Key Vault access troubleshooting. Worked with application teams on secure file transfer and certificate lifecycle testing.",
+  "category": "Cybersecurity & Identity",
+  "tags": [
+    "Security",
+    "Cloud"
+  ],
+  "technologies": [
+    "Azure Key Vault",
+    "SFTP",
+    "Azure Virtual Machines",
+    "Certbot",
+    "TLS Certificates"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": false,
+  "sortOrder": 14,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-14",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/enterprise-app-security-integration"
+}

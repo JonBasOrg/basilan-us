@@ -1,0 +1,39 @@
+{
+  "id": "azure-front-door-waf",
+  "slug": "azure-front-door-waf",
+  "name": "Azure Front Door & WAF Modernization",
+  "tagline": "Azure Front Door & WAF Modernization",
+  "description": "Coordinated Azure Front Door Classic-to-Premium migration and successful application testing. Follow-up work covered custom domains, managed-certificate validation, WAF managed rules, and log analysis. Reviewed exclusions and bot-protection settings, with targeted web-challenge changes and ongoing security tuning.",
+  "category": "Cybersecurity & Identity",
+  "tags": [
+    "Cloud",
+    "Security"
+  ],
+  "technologies": [
+    "Azure Front Door Premium",
+    "Azure WAF",
+    "Managed Certificates",
+    "Azure Monitor",
+    "Bot Protection"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": true,
+  "sortOrder": 4,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-04",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/azure-front-door-waf"
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ReviewNotice } from "@/components/sections/ProfileSections";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { site } from "@/content/site";
@@ -78,8 +79,9 @@ export default function RootLayout({
         />
       </head>
       <body className="grain min-h-screen antialiased">
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-ink-950 focus:p-4">Skip to content</a>
         <Nav />
-        <main id="main">{children}</main>
+        <main id="main" className="overflow-x-clip"><div className="pt-20"><ReviewNotice /></div>{children}</main>
         <Footer />
       </body>
     </html>

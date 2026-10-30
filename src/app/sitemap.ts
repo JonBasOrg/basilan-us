@@ -2,11 +2,13 @@ import type { MetadataRoute } from "next";
 import { site } from "@/content/site";
 import { projects } from "@/content/projects";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = site.canonical;
   const now = new Date();
 
-  const routes = ["", "/projects", "/about", "/experience", "/contact"].map(
+  const routes = ["", "/about", "/projects", "/awards", "/contact"].map(
     (path) => ({
       url: `${base}${path}`,
       lastModified: now,

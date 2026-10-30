@@ -1,0 +1,39 @@
+{
+  "id": "hybrid-identity-ad-entra",
+  "slug": "hybrid-identity-ad-entra",
+  "name": "Hybrid Identity, Active Directory & Entra ID",
+  "tagline": "Hybrid Identity, Active Directory & Entra ID",
+  "description": "Worked across hybrid Active Directory and Microsoft Entra ID environments, including domain-trust dependencies and directory cleanup. Enabled cross-tenant provisioning and group-based access, with hands-on synchronization troubleshooting.",
+  "category": "Cybersecurity & Identity",
+  "tags": [
+    "Security",
+    "Infrastructure"
+  ],
+  "technologies": [
+    "Active Directory",
+    "Microsoft Entra ID",
+    "Cross-tenant Synchronization",
+    "Domain Trusts",
+    "Group-based Access"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": false,
+  "sortOrder": 5,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-05",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/hybrid-identity-ad-entra"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "enterprise-networking-cloud-connectivity",
+  "slug": "enterprise-networking-cloud-connectivity",
+  "name": "Enterprise Networking & Secure Cloud Connectivity",
+  "tagline": "Enterprise Networking & Secure Cloud Connectivity",
+  "description": "Supported enterprise networking modernization, Azure connectivity, and site-to-site VPN operations. ExpressRoute was retired in March 2026; subsequent work focused on VPN-based hybrid connectivity, virtual-network DNS, and private DNS and resolver services.",
+  "category": "Cloud & Infrastructure",
+  "tags": [
+    "Cloud",
+    "Infrastructure",
+    "Security"
+  ],
+  "technologies": [
+    "Azure Networking",
+    "Azure VPN Gateway",
+    "Site-to-site VPN",
+    "Azure Private DNS",
+    "Azure DNS Private Resolver"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": false,
+  "sortOrder": 7,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-07",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/enterprise-networking-cloud-connectivity"
+}

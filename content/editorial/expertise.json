@@ -1,0 +1,136 @@
+{
+  "entries": [
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "id": "cloud-azure",
+      "title": "Cloud Architecture & Azure",
+      "description": "Azure migration and infrastructure modernization, hybrid connectivity, and cloud resource analysis, with operational continuity as a practical priority.",
+      "technologies": [
+        "Microsoft Azure",
+        "Azure Virtual Machines",
+        "Azure VPN Gateway"
+      ],
+      "projectSlugs": [
+        "enterprise-data-center-exit-azure-migration",
+        "enterprise-networking-cloud-connectivity",
+        "azure-resource-inventory-automation"
+      ]
+    },
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "id": "sql-data",
+      "title": "SQL Server & Data Platforms",
+      "description": "Database availability, operational investigation, and data-platform support. The project stories distinguish platform engineering from report development and analysis from completed remediation.",
+      "technologies": [
+        "SQL Server",
+        "Always On Availability Groups",
+        "Microsoft Fabric",
+        "Power BI",
+        "Azure Synapse Analytics"
+      ],
+      "projectSlugs": [
+        "enterprise-sql-high-availability",
+        "enterprise-sql-performance-rca",
+        "fabric-powerbi-data-platform"
+      ]
+    },
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "id": "security-identity",
+      "title": "Cybersecurity & Identity",
+      "description": "Identity and application-access troubleshooting, cloud security review, and evidence preparation for compliance work.",
+      "technologies": [
+        "Microsoft Entra ID",
+        "Cross-tenant Synchronization",
+        "Azure Front Door",
+        "Azure WAF",
+        "Azure Key Vault"
+      ],
+      "projectSlugs": [
+        "hybrid-identity-ad-entra",
+        "azure-front-door-waf",
+        "soc2-security-compliance"
+      ]
+    },
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "id": "infrastructure-network",
+      "title": "Infrastructure & Networking",
+      "description": "Hybrid connectivity, private cloud-service access, and infrastructure transition work, considered alongside backup and recovery requirements.",
+      "technologies": [
+        "Azure Virtual Network",
+        "VPN",
+        "Azure Private DNS",
+        "Veeam"
+      ],
+      "projectSlugs": [
+        "enterprise-networking-cloud-connectivity",
+        "enterprise-data-center-exit-azure-migration",
+        "cloud-backup-disaster-recovery"
+      ]
+    },
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "id": "automation-finops",
+      "title": "Automation & FinOps",
+      "description": "Reusable cost-reporting and inventory automation that connects subscription spending, project allocation, resource tagging, and commitment reviews with practical financial decisions.",
+      "technologies": [
+        "PowerShell",
+        "Python",
+        "Azure Cost Management",
+        "Azure Resource Graph",
+        "Excel"
+      ],
+      "projectSlugs": [
+        "azure-cost-optimization-reporting",
+        "azure-resource-inventory-automation"
+      ]
+    },
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "id": "ai-operations",
+      "title": "AI-Assisted IT Operations",
+      "description": "Human-reviewed use of agents and runbooks for evidence gathering, technical investigation, and reporting. Experimental integrations remain distinct from production controls.",
+      "technologies": [
+        "Hermes Agent",
+        "Obsidian",
+        "PowerShell",
+        "Azure CLI"
+      ],
+      "projectSlugs": [
+        "ai-assisted-it-operations",
+        "enterprise-sql-performance-rca"
+      ]
+    },
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "id": "leadership-governance",
+      "title": "IT Leadership & Governance",
+      "description": "Connecting technical teams, cloud-cost visibility, license reviews, and documented evidence with business priorities and clear approval boundaries.",
+      "technologies": [
+        "Cloud governance",
+        "FinOps",
+        "Technical documentation"
+      ],
+      "projectSlugs": [
+        "soc2-security-compliance",
+        "m365-licensing-governance",
+        "azure-cost-optimization-reporting"
+      ]
+    }
+  ]
+}

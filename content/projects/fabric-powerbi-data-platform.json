@@ -1,0 +1,39 @@
+{
+  "id": "fabric-powerbi-data-platform",
+  "slug": "fabric-powerbi-data-platform",
+  "name": "Microsoft Fabric, Power BI & Data Platform",
+  "tagline": "Microsoft Fabric, Power BI & Data Platform",
+  "description": "Supported Microsoft Fabric and Azure Synapse operations through capacity reviews, connectivity troubleshooting, and access configuration. Created utilization reporting to inform capacity discussions and coordinated technical feedback on a team Fabric implementation. Worked with the data-platform team on infrastructure and permissions supporting Power BI and reporting workloads.",
+  "category": "Database & Data Platforms",
+  "tags": [
+    "Cloud",
+    "Infrastructure"
+  ],
+  "technologies": [
+    "Microsoft Fabric",
+    "Power BI",
+    "Azure Synapse Analytics",
+    "Microsoft Entra ID",
+    "Azure Storage"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": false,
+  "sortOrder": 8,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-08",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/fabric-powerbi-data-platform"
+}

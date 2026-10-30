@@ -1,0 +1,40 @@
+{
+  "id": "enterprise-data-center-exit-azure-migration",
+  "slug": "enterprise-data-center-exit-azure-migration",
+  "name": "Enterprise Data Center Exit & Azure Migration",
+  "tagline": "Enterprise Data Center Exit & Azure Migration",
+  "description": "Helped complete a data-center exit and Azure migration initiative in March 2026, building cloud infrastructure and resolving application dependencies along the way. The work included SQL workload transitions, infrastructure modernization, and retirement of selected legacy dependencies.",
+  "category": "Cloud & Infrastructure",
+  "tags": [
+    "Cloud",
+    "Infrastructure",
+    "Leadership"
+  ],
+  "technologies": [
+    "Microsoft Azure",
+    "Azure Virtual Machines",
+    "Windows Server",
+    "SQL Server",
+    "PowerShell"
+  ],
+  "status": "Completed",
+  "year": 2026,
+  "dates": {
+    "start": null,
+    "end": "2026-03"
+  },
+  "featured": true,
+  "sortOrder": 1,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-01",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/enterprise-data-center-exit-azure-migration"
+}
