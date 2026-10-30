@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "title": "Microsoft Certified Professional",
+      "issuer": "Microsoft",
+      "description": "Microsoft professional certification.",
+      "sourceReference": "certification-mcp"
+    }
+  ]
+}

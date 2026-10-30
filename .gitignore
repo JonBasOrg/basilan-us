@@ -30,5 +30,12 @@ next-env.d.ts
 # vercel
 .vercel
 
+# Local-only staged review resume (source PDF remains outside repo)
+/public/resume/eduardo-basilan-resume.pdf
+/review-artifacts/
+/docs/CONTENT-REVIEW.md
+/docs/IMPLEMENTATION-REVIEW.md
+/docs/SECURITY-REMEDIATION.md
+
 # logs
 *.log

@@ -48,6 +48,7 @@ export default function ContactPage() {
               <ArrowUpRight className="h-5 w-5 text-chalk-muted transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
 
+            <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-6">Connect on LinkedIn <ArrowUpRight className="h-4 w-4" /></a>
             <p className="mt-6 text-center text-sm text-chalk-faint">
               Prefer a project link instead? Visit{" "}
               <a href="https://invest.basilan.us" target="_blank" rel="noopener noreferrer" className="link-underline text-chalk-muted hover:text-accent">

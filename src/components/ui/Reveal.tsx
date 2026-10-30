@@ -22,6 +22,7 @@ export function Reveal({
     <MotionTag
       className={cn(className)}
       initial={reduce ? false : "hidden"}
+      animate={reduce ? "show" : undefined}
       whileInView={reduce ? undefined : "show"}
       viewport={{ once: true, margin: "-80px" }}
       variants={fadeUp}
@@ -44,6 +45,7 @@ export function RevealGroup({
     <motion.div
       className={cn(className)}
       initial={reduce ? false : "hidden"}
+      animate={reduce ? "show" : undefined}
       whileInView={reduce ? undefined : "show"}
       viewport={{ once: true, margin: "-60px" }}
       variants={staggerContainer}

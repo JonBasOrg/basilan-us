@@ -1,0 +1,11 @@
+const fs=require('node:fs');const path=require('node:path');const assert=require('node:assert/strict');
+function files(root){return fs.readdirSync(root,{withFileTypes:true}).flatMap(e=>e.isDirectory()?files(path.join(root,e.name)):[path.join(root,e.name)]);}
+const out=path.join(process.cwd(),'out');const all=files(out);const textFiles=all.filter(p=>/\.(?:html|js|txt|xml)$/.test(p));const text=textFiles.map(p=>fs.readFileSync(p,'utf8')).join('\n');
+for(const token of ['internalReference','sourceReference','memory-vault','portfolio-private','enterprise-provenance'])assert.ok(!text.toLowerCase().includes(token.toLowerCase()),'Private source marker exported: '+token);
+assert.ok(!/["'\s](?:[a-z0-9-]+\.)+(?:local|internal|lan)(?=["'\s/:]|$)/i.test(text),'Private hostname exported');
+assert.ok(!/\b[a-z0-9-]+\.onmicrosoft\.com\b/i.test(text),'Tenant domain exported');
+assert.equal(all.filter(p=>p.toLowerCase().endsWith('.pdf')).length,0,'No resume PDF may be exported');for(const old of ['resume','experience'])assert.ok(!fs.existsSync(path.join(out,old)),'Retired career route exported');
+const html=all.filter(p=>p.endsWith('.html')).map(p=>fs.readFileSync(p,'utf8')).join('\n');assert.ok(!/(?:href|src|data)=["'][^"']*(?:\/resume|\/experience|\.pdf)["']/i.test(html),'Retired career control exported');
+const selected=JSON.parse(fs.readFileSync('content/selection.json','utf8')).enterpriseProjects;assert.equal(selected.length,14);assert.equal(selected.filter(p=>p.featured).length,6);const review=process.env.PORTFOLIO_REVIEW_PREVIEW==='1';
+for(const p of selected){const raw=JSON.parse(fs.readFileSync(path.join('content/projects',p.id+'.json'),'utf8'));const visible=raw.publicVisible===true&&raw.confidentiality==='public'&&(raw.approval==='approved'||review&&raw.approval==='pending');assert.equal(fs.existsSync(path.join(out,'projects',p.id,'index.html')),visible,p.id+' visibility');if(!visible)assert.ok(!text.includes(p.id),p.id+' leaked outside project route');}
+console.log(JSON.stringify({mode:review?'local-review':'default',checkedTextAssets:textFiles.length,projectSelection:selected.length,featured:selected.filter(p=>p.featured).length,resumePdfs:0,privateMarkers:0,status:'PASS'}));

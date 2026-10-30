@@ -1,0 +1,46 @@
+{
+  "slug": "classic-games-web",
+  "name": "Classic Games — Web",
+  "tagline": "Play the collection right in your browser.",
+  "description": "The browser-native home for the Classic Games Collection — the same Flutter codebase compiled to the web, so Android and browser share the exact game engines, AI, difficulty levels, and local-first persistence. Play on desktop or mobile with mouse, touch, and keyboard.",
+  "category": "Web",
+  "status": "Live",
+  "year": 2026,
+  "featured": true,
+  "sortOrder": 3,
+  "image": null,
+  "useMockup": "games",
+  "technologies": [
+    "Flutter",
+    "Dart",
+    "Web",
+    "Local-first Storage",
+    "Responsive"
+  ],
+  "url": "https://games.basilan.us",
+  "hub": true,
+  "accent": "steel",
+  "tags": [
+    "Web",
+    "Games"
+  ],
+  "id": "classic-games-web",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "kind": "personal",
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "sources": [
+    {
+      "description": "Existing public portfolio project description.",
+      "internalReference": "src/content/projects.ts (pre-migration)"
+    }
+  ]
+}

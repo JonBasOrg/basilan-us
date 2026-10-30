@@ -7,18 +7,18 @@ export const site = {
   url: "https://basilan.us",
   tagline: "I build systems that solve real problems.",
   positioning: [
-    "Cloud infrastructure.",
-    "AI & automation.",
-    "Trading systems.",
-    "Games.",
+    "Azure infrastructure.",
+    "SQL platforms.",
+    "Security.",
+    "Automation.",
   ],
   description:
-    "Jon-jon Basilan is an engineer and technologist who builds real, working software — cloud infrastructure, AI automation, trading systems, and games. Explore his projects at basilan.us.",
+    "Explore Jon-jon Basilan’s enterprise technology portfolio: Azure infrastructure, SQL Server, cybersecurity, automation, governance, and human-reviewed AI operations, alongside independent personal projects.",
   // Optional social links — only set values you have verified.
   social: {
     github: "https://github.com/JonBasOrg",
     kofi: "https://ko-fi.com/jonbas",
-    linkedin: "", // add verified profile URL to enable
+    linkedin: "https://www.linkedin.com/in/ebasilanjr/",
     x: "", // add verified profile URL to enable
   },
   // Sub-project hubs (separate applications / subdomains).
@@ -31,13 +31,14 @@ export const site = {
     games: {
       label: "games.basilan.us",
       url: "https://games.basilan.us",
-      description: "Browser Classic Games (coming soon)",
+      description: "Browser Classic Games",
     },
   },
   nav: [
-    { label: "Projects", href: "/projects" },
+    { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Experience", href: "/experience" },
+    { label: "Projects", href: "/projects" },
+    { label: "Awards", href: "/awards" },
     { label: "Contact", href: "/contact" },
   ],
 } as const;

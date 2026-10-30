@@ -24,7 +24,7 @@ export function CaseStudyHero({ project }: { project: Project }) {
           <div className="flex flex-wrap items-center gap-3">
             <StatusBadge status={project.status} pulse={project.status === "Live" || project.status === "Published"} />
             <span className="text-xs uppercase tracking-wider2 text-chalk-faint">
-              {project.category} · {project.year}
+              {project.category}{project.year !== null && <> · {project.year}</>}
             </span>
           </div>
           <h1 className="mt-5 font-display text-display-lg text-balance">

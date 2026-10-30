@@ -1,0 +1,37 @@
+{
+  "id": "m365-licensing-governance",
+  "slug": "m365-licensing-governance",
+  "name": "Microsoft 365 Licensing & Governance",
+  "tagline": "Microsoft 365 Licensing & Governance",
+  "description": "Supported a monthly Microsoft 365 licensing review that combined user allocations and inactivity reports with manager feedback to identify unused licenses. Reviewed renewal and purchasing options, prepared provider reduction requests, and investigated account-lifecycle gaps that could leave licenses assigned unnecessarily.",
+  "category": "Enterprise Operations & Governance",
+  "tags": [
+    "Leadership"
+  ],
+  "technologies": [
+    "Microsoft 365",
+    "Microsoft Entra ID",
+    "CSP Licensing",
+    "License Utilization Reviews"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": false,
+  "sortOrder": 13,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-13",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/m365-licensing-governance"
+}

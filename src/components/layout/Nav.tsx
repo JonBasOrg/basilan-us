@@ -28,6 +28,12 @@ export function Nav() {
   }, [pathname]);
 
   useEffect(() => {
+    const onKey = (event: KeyboardEvent) => { if (event.key === "Escape" && open) {setOpen(false); document.getElementById("mobile-menu-toggle")?.focus();} };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
@@ -50,14 +56,14 @@ export function Nav() {
           aria-label={`${site.name} — home`}
         >
           <span className="font-display text-lg font-semibold tracking-tight text-chalk">
-            Jon-jon
+            Jon-jon{" "}
           </span>
           <span className="font-display text-lg font-semibold tracking-tight text-accent">
             Basilan
           </span>
         </Link>
 
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => {
             const active = pathname === item.href || pathname.startsWith(item.href + "/");
             return (
@@ -80,18 +86,20 @@ export function Nav() {
             );
           })}
           <a
-            href={`mailto:${site.email}`}
-            className="btn-ghost ml-3 !px-5 !py-2 text-xs"
+            href={site.social.linkedin} target="_blank" rel="noopener noreferrer"
+            className="btn-primary ml-3 !px-5 !py-2 text-xs"
           >
-            Contact
+            LinkedIn
             <ArrowUpRight className="h-3.5 w-3.5" />
           </a>
         </div>
 
         <button
           type="button"
+          id="mobile-menu-toggle"
+          aria-controls="mobile-menu"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink-600 text-chalk md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink-600 text-chalk lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
         >
@@ -102,11 +110,12 @@ export function Nav() {
       <AnimatePresence>
         {open && (
           <motion.div
+            id="mobile-menu"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 top-16 z-40 bg-ink-950/98 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 top-16 overflow-y-auto z-40 bg-ink-950/98 backdrop-blur-xl lg:hidden"
           >
             <div className="container-x flex flex-col gap-1 pt-8">
               {navItems.map((item, i) => (
@@ -125,8 +134,8 @@ export function Nav() {
                 </motion.div>
               ))}
               <div className="mt-8">
-                <a href={`mailto:${site.email}`} className="btn-primary w-full">
-                  Get in touch
+                <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" className="btn-primary w-full">
+                  LinkedIn
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
               </div>

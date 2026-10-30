@@ -1,0 +1,52 @@
+{
+  "slug": "classic-games",
+  "name": "Classic Games Collection",
+  "tagline": "The games you remember, rebuilt for today.",
+  "description": "A local-first collection of classic board, card, and puzzle games — no ads, no analytics, no accounts. Eleven polished games in one offline-friendly app, built with Flutter for Android.",
+  "category": "Games",
+  "status": "Published",
+  "year": 2026,
+  "featured": true,
+  "sortOrder": 2,
+  "image": "/projects/classic-games/hero.jpg",
+  "useMockup": "games",
+  "gallery": [
+    "/projects/classic-games/01-home.jpg",
+    "/projects/classic-games/chess.jpg",
+    "/projects/classic-games/sudoku.jpg",
+    "/projects/classic-games/solitaire.jpg"
+  ],
+  "technologies": [
+    "Flutter",
+    "Dart",
+    "Android",
+    "Local-first Storage",
+    "Custom Game Engines",
+    "Responsive UI"
+  ],
+  "caseStudy": "/projects/classic-games",
+  "googlePlay": "",
+  "accent": "gold",
+  "tags": [
+    "Games"
+  ],
+  "id": "classic-games",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "kind": "personal",
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "sources": [
+    {
+      "description": "Existing public portfolio project description.",
+      "internalReference": "src/content/projects.ts (pre-migration)"
+    }
+  ]
+}

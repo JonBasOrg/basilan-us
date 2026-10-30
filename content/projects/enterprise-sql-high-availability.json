@@ -1,0 +1,38 @@
+{
+  "id": "enterprise-sql-high-availability",
+  "slug": "enterprise-sql-high-availability",
+  "name": "Enterprise SQL Server High Availability",
+  "tagline": "Enterprise SQL Server High Availability",
+  "description": "Built and extended SQL Server availability-group infrastructure in Azure, including cloud servers, cluster resources, listeners, and load-balancer integration. Hands-on work also covered replica configuration and recovery of database synchronization to support resilient database operations.",
+  "category": "Database & Data Platforms",
+  "tags": [
+    "Infrastructure"
+  ],
+  "technologies": [
+    "SQL Server",
+    "Always On Availability Groups",
+    "Failover Clustering",
+    "Azure Load Balancer",
+    "PowerShell"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": true,
+  "sortOrder": 2,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-02",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/enterprise-sql-high-availability"
+}

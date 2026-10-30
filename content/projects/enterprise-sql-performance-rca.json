@@ -1,0 +1,38 @@
+{
+  "id": "enterprise-sql-performance-rca",
+  "slug": "enterprise-sql-performance-rca",
+  "name": "Enterprise SQL Performance & Root Cause Analysis",
+  "tagline": "Enterprise SQL Performance & Root Cause Analysis",
+  "description": "Investigated SQL Server performance using blocking, wait, and job-history evidence to narrow down operational issues. Used PowerShell health checks for failed jobs, active blocking, long-running work, and disk capacity. Combined deeper request and transaction analysis with monitoring tools to develop evidence-based remediation recommendations.",
+  "category": "Database & Data Platforms",
+  "tags": [
+    "Infrastructure"
+  ],
+  "technologies": [
+    "SQL Server",
+    "PowerShell",
+    "T-SQL",
+    "SQL Server DMVs",
+    "SolarWinds DPA"
+  ],
+  "status": "Investigation",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": false,
+  "sortOrder": 9,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-09",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/enterprise-sql-performance-rca"
+}

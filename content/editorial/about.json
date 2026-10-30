@@ -1,0 +1,11 @@
+{
+  "approval": "approved",
+  "confidentiality": "public",
+  "publicVisible": true,
+  "summary": "I work across enterprise infrastructure, cloud modernization, and hands-on IT operations—connecting technical detail with the practical needs of the business.",
+  "paragraphs": [
+    "My work brings together Azure environments, SQL Server and data platforms, cybersecurity, identity, and infrastructure automation. I care about operational continuity, clear technical decisions, and making complex systems easier to understand and maintain.",
+    "I combine technical investigation with cross-functional coordination and financial and operational governance. Cost visibility, useful documentation, and evidence-based troubleshooting are as important to me as the underlying technology.",
+    "I also use AI-assisted workflows to organize evidence, investigate technical issues, and prepare reports. These are human-reviewed tools and experiments—not autonomous systems making unapproved production changes."
+  ]
+}

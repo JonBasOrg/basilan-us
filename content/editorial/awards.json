@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "title": "Employee of the Year Award",
+      "issuer": "Apex Global Solutions (AGS)",
+      "year": 2017,
+      "description": "Recognized by AGS as Employee of the Year.",
+      "sourceReference": "recognition-2017"
+    },
+    {
+      "approval": "approved",
+      "confidentiality": "public",
+      "publicVisible": true,
+      "title": "Engineer of the Year",
+      "issuer": "Apex Global Solutions (AGS)",
+      "year": 2015,
+      "description": "Recognized by AGS as Engineer of the Year.",
+      "sourceReference": "recognition-2015"
+    }
+  ]
+}

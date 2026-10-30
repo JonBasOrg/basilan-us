@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { statusStyles, statusDot, type ProjectStatus } from "@/content/projects";
+import { statusStyles, statusDot, type ProjectStatus } from "@/lib/portfolio";
 
 export function StatusBadge({
   status,

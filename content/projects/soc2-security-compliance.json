@@ -1,0 +1,38 @@
+{
+  "id": "soc2-security-compliance",
+  "slug": "soc2-security-compliance",
+  "name": "SOC 2 Security & Compliance Improvements",
+  "tagline": "SOC 2 Security & Compliance Improvements",
+  "description": "Supported SOC 2 readiness through security and cloud-governance reviews, asset inventories, assessment mapping, and evidence coordination. The work connected identity, access, logging, and governance questions with documented findings and follow-up actions.",
+  "category": "Cybersecurity & Identity",
+  "tags": [
+    "Security",
+    "Leadership"
+  ],
+  "technologies": [
+    "Azure Resource Graph",
+    "Azure CLI",
+    "Microsoft Graph",
+    "Cloud Governance"
+  ],
+  "status": "Ongoing",
+  "year": null,
+  "dates": {
+    "start": null,
+    "end": null
+  },
+  "featured": true,
+  "sortOrder": 6,
+  "kind": "employer",
+  "approval": "approved",
+  "publicVisible": true,
+  "confidentiality": "public",
+  "sourceReference": "enterprise-06",
+  "sources": [],
+  "challenge": null,
+  "responsibilities": [],
+  "implementation": [],
+  "outcome": null,
+  "image": null,
+  "caseStudy": "/projects/soc2-security-compliance"
+}
