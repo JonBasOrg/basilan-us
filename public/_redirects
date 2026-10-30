@@ -2,6 +2,11 @@
 # www -> apex
 https://www.basilan.us/*  https://basilan.us/:splat  301
 
+# Retired career page: route old bookmarks to approved project-centric About.
+# Pages redirects execute before static asset lookup, including stale asset keys.
+/experience                /about/  301
+/experience/*              /about/  301
+
 # Optional: preserve trailing-slash-less project URLs
 /projects/trading-platform  /projects/trading-platform/  301
 /projects/classic-games     /projects/classic-games/     301
